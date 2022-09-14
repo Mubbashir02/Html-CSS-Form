@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-image: url("https://www.wearetrident.co.uk/wp-content/uploads/footer-form-background.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+        }
+        #PForm
+        {
+            height: 400px;
+            width: 40%;
+            background-color: grey;
+			opacity: 0.8;
+            color: white;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 70px;
+            border-radius: 10px;
+            float: left;
+        }
+        #submit
+        {
+            background-color: yellow;
+            border-radius: 10px;
+            width: 15%;
+        }
+        h2
+        {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-size: 40px;
+        }
+        label
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        h3{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+		input
+		{
+			border-radius:5px;
+		}
+		
+    </style>
+</head>
+<body>
+    <div id="PForm">
+        <center><h2><u>Form</u></h2></center>
+    <form>
+        <center>
+        <label>Username:</label><br>
+        <input type="text" placeholder="Enter Name" required><br>
+        <label>Age:</label><br>
+        <input type="number" placeholder="Enter Your Age">
+        
+        <div id="radiooption">
+        <br>
+		<label>
+		<input type="radio">Male</label>
+        <br>
+		<label>
+		<input type="radio">Female</label>
+        <br>
+		<input type="checkbox" required>
+        <label>Agree to submit the form</label>
+        <br>
+		<input type="checkbox" required>
+        <label>Policy and terms</label>
+        <br><br>
+		<input type="submit" onclick="alert('Thankyou for submit')" id="submit">
+    </div>
+    </center>
+
+    </form>
+</div>
+
+</body>
+</html>
